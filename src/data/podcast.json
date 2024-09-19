@@ -12,9 +12,33 @@
     "categories": ["esporte", "corrida"]
   },
   {
-    "podcastName": "venus",
-    "episode": "XUXA",
-    "videoId": "00000000",
-    "categories": ["humor"]
+    "podcastName": "Podpah",
+    "episode": "Felipe Neto - Podpah #172",
+    "videoId": "CKjANZ1eg3g",
+    "categories": ["entretenimento", "internet"]
+  },
+  {
+    "podcastName": "Mamilos",
+    "episode": "As Conquistas da Lei Maria da Penha",
+    "videoId": "is7UNidRRBk",
+    "categories": ["sociedade", "gênero", "feminismo"]
+  },
+  {
+    "podcastName": "Inteligência Ltda",
+    "episode": "JOSIANE OLIVEIRA + MARIÁH HEUSI + GARCIA JR - Histórias Tenebrosas #005",
+    "videoId": "dkYKTYHn1Y0",
+    "categories": ["entretenimento", "humor", "histórias"]
+  },
+  {
+    "podcastName": "Inteligência Ltda",
+    "episode": "INRI CRISTO - Inteligência Ltda. Podcast #1157",
+    "videoId": "VYStbCV3ujs",
+    "categories": ["entretenimento", "religião", "curiosidades"]
+  },
+  {
+    "podcastName": "flow",
+    "episode": "[FILOSOFIA] TINOCANDO TV - Flow 🤝 Prime Day",
+    "videoId": "IktGbSbzHqY",
+    "categories": ["entretenimento", "filosofia", "humor"]
   }
 ]
