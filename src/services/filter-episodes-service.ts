@@ -11,10 +11,12 @@ export const servicesFilterPodcasts = async (podcastName: string | undefined): P
     }
 
     //Buscando dados
-    const separator = "?name="
-    const name = podcastName?.split(separator)[1] || ""
+    const params = new URLSearchParams(podcastName?.split('?')[1]);
 
-    const data = await dataPodcast(name)
+    const name = params.get("name") || ""
+    const category = params.getAll("category") || ""
+
+    const data = await dataPodcast(name, category)
 
     //verifico sem tem conteúdo
     if(data){

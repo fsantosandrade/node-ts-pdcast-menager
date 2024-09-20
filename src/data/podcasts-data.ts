@@ -4,7 +4,7 @@ import { PodcastModel } from '../models/podcast-model'
 
 const pathData = path.join(__dirname, "../data/podcast.json")
 
-export const dataPodcast = async (podcastName?:string):Promise<PodcastModel[]> => {
+export const dataPodcast = async (podcastName?:string, podcastCategories?: string[]):Promise<PodcastModel[]> => {
     const language = "utf-8"
 
     const data = fs.readFileSync(pathData, language)
@@ -12,6 +12,14 @@ export const dataPodcast = async (podcastName?:string):Promise<PodcastModel[]> =
 
     if(podcastName) {
         jsonFile = jsonFile.filter((result: PodcastModel) => result.podcastName === podcastName)
+    }
+
+    if(podcastCategories?.length !== 0) {
+        podcastCategories?.forEach(category => {
+            jsonFile = jsonFile.filter((result: PodcastModel) => {
+                return result.categories?.includes(category)
+            })
+        })
     }
 
     return jsonFile

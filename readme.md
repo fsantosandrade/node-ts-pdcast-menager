@@ -40,9 +40,16 @@ O Podcast Manager é uma aplicação inspirada no estilo da Netflix, que permite
 
 ### Filtrar episódios por nome de podcast
 
-- **Endpoint:** `GET /episode?podcastName={nome}`
+- **Endpoint:** `GET /episode?name={nome}`
 - **Descrição:** Retorna uma lista de episódios de podcast com base no nome do podcast fornecido.
-- **Exemplo de requisição:** `GET /episode?podcastName=flow`
+- **Exemplo de requisição:** `GET /episode?name=flow`
+
+### Filtrar episódios por categoria de podcast
+
+- **Endpoint:** `GET /episode?category={category}`
+- **Descrição:** Retorna uma lista de episódios de podcast com base na(s) categoria do podcast fornecido.
+- **Exemplo de requisição:** `GET /episode?category=humor`
+
 
 ## Tecnologias Utilizadas
 
